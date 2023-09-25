@@ -5,8 +5,6 @@
 }
 
 .body {
-    color: white;
-    background-color: rgb(28, 33, 43);
     width: 100vw;
     height: 100vh;
     display: flex;

@@ -12,8 +12,8 @@ button.addEventListener("click", function(e) {
   const occupation2 = document.getElementById('occupation2').value;
   const id = document.getElementById('id').value;
   const id2 = document.getElementById('id2').value;
-  const idType = document.getElementById('idType').value;
-  const idType2 = document.getElementById('idType2').value;
+  const idIssuedBy = document.getElementById('idIssuedBy').value;
+  const idIssuedBy2 = document.getElementById('idIssuedBy2').value;
   const cpf = document.getElementById('cpf').value;
   const cpf2 = document.getElementById('cpf2').value;
   const cep = document.getElementById('cep').value;

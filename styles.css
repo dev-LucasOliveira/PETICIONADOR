@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    color: white;
+    background-color: rgb(28, 33, 43);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    flex-direction: column;
+  }
+  
+  .textFormBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+  }
+  
+  .textInputBox {
+    padding: 50px 20px 0px;
+    border: 1px solid rgb(128, 128, 128, 0.7);
+    border-radius: 5px;
+    width: fit-content;
+    height: 60vh;
+  }
+  
+  .inputBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3%;
+  }
+  
+  .textInput {
+    width: 50%;
+    height: 5%;
+  }
+  

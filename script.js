@@ -40,16 +40,16 @@ button.addEventListener("click", (e) => {
   const currentMonth = numberToMonth(currentMonthNumber);
 
   const text = `
-    <div style="text-align:justify">
-      <p><b>PROCURAÇÃO:</b></p>
+    <div style="text-align: justify; font-family: Arial, Helvetica, sans-serif; font-size: 12">
+      <div style="display: flex; justify-content: center"><b><p style="text-decoration: underline">PROCURAÇÃO</p></b></div>
       <br><br>
-      <p><b>Outorgantes: ${name}</b>, ${nacionality}, ${civilState}, ${occupation}, portador da carteira de identidade nº ${id} expedida pelo(a) ${idIssuedBy}, portador(a) do CPF sob o nº ${cpf}, residente e domiciliado à ${adress}, ${district} - ${city}/${state}, CEP: ${cep}, nomeia e constitui o(a) outorgado(a) abaixo qualificado(a) em sua bastante procuradora.</p>
+      <p><b>OUTORGANTES: ${name}</b>, ${nacionality}, ${civilState}, ${occupation}, portador da carteira de identidade nº ${id} expedida pelo(a) ${idIssuedBy}, portador(a) do CPF sob o nº ${cpf}, residente e domiciliado à ${adress}, ${district} - ${city}/${state}, CEP: ${cep}, nomeia e constitui a outorgada abaixo qualificada em sua bastante procuradora.</p>
       <br><br>
-      <p><b>Outorgado(a): ELISA ACCIOLY GONÇALVES E VASCONCELLOS</b> brasileira, casada, advogada, portadora da carteira de identidade nº 123.258, expedida pela OAB/RJ, com escritório profissional à Rua Real Grandeza, nº 139, sala 403, Botafogo, Rio de Janeiro/RJ.</p>
+      <p><b>OUTORGADA: ELISA ACCIOLY GONÇALVES E VASCONCELLOS</b>, brasileira, casada, advogada, portadora da carteira de identidade nº 123.258, expedida pela OAB/RJ, com escritório profissional à Rua Real Grandeza, nº 139, sala 403, Botafogo, Rio de Janeiro/RJ, CEP: 22281-033.</p>
       <br><br>
-      <p><b>Poderes e finalidades:</b> Os Outorgantes conferem à Outorgada todos os poderes da cláusula de foro em geral para o fim de representá-los no inventário e partilha dos bens deixados por Sônia Vaisman, recebendo poderes especiais para assinatura de termo de inventariante, substabelecer com reservas, podendo para tanto praticar todos os demais atos necessários ao cumprimento do mandato.</p>
+      <p><b>PODERES E FINALIDADES:</b> Procuração ad judicia et extra e os mais especiais para representar o outorgante judicialmente, podendo, para tanto, propor e variar de ação, solicitar e receber certidões, confessar, transigir, desistir, renunciar a direito sobre o qual se funda a ação, concordar e discordar, conciliar em audiência, receber e dar quitação, assinar termos, receber e retirar alvarás e firmar compromissos, em qualquer instância ou Tribunal, podendo ainda, substabelecer com ou sem reserva de poderes e praticar todos os atos para bem fielmente desempenhar o presente, em todo e qualquer Estado da Federação.</p>
       <br><br>
-      <div style="display:flex; flex-direction:column; align-items:center; justify-content:center">
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
         <p>Rio de Janeiro, ${currentDay} de ${currentMonth} de ${currentYear}.</p>
         <br><br>
         <p>_________________________________________________________________</p>
@@ -59,10 +59,10 @@ button.addEventListener("click", (e) => {
     </div>
   `;
 
-  download('test.odt', text);
+  download(text);
 });
 
-function download(filename, text) {
+function download(text) {
 
   const options = {
     margin: 20,
@@ -72,16 +72,4 @@ function download(filename, text) {
   }
 
   html2pdf().set(options).from(text).save();
-
-  // const text = generateText();
-  // let element = document.createElement('a');
-  // element.setAttribute('href', 'data:text/html;charset=utf-8,' + encodeURIComponent(text));
-  // element.setAttribute('download', filename);
-
-  // element.style.display = 'none';
-  // document.body.appendChild(element);
-
-  // element.click();
-
-  // document.body.removeChild(element);
 }

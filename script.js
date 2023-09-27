@@ -43,7 +43,7 @@ button.addEventListener("click", (e) => {
     <div style="text-align: justify; font-family: Arial, Helvetica, sans-serif; font-size: 12; line-height: 1.5">
       <div style="display: flex; justify-content: center"><b><p style="text-decoration: underline">PROCURAÇÃO</p></b></div>
       <br><br>
-      <p><b>OUTORGANTES: ${name}</b>, ${nacionality}, ${civilState}, ${occupation}, portador da carteira de identidade nº ${id} expedida pelo(a) ${idIssuedBy}, portador(a) do CPF sob o nº ${cpf}, residente e domiciliado à ${adress}, ${district} - ${city}/${state}, CEP: ${cep}, nomeia e constitui a outorgada abaixo qualificada em sua bastante procuradora.</p>
+      <p><b>OUTORGANTE: ${name}</b>, ${nacionality}, ${civilState}, ${occupation}, portador da carteira de identidade nº ${id} expedida pelo(a) ${idIssuedBy}, portador(a) do CPF sob o nº ${cpf}, residente e domiciliado à ${adress}, ${district} - ${city}/${state}, CEP: ${cep}, nomeia e constitui a outorgada abaixo qualificada em sua bastante procuradora.</p>
       <br><br>
       <p><b>OUTORGADA: ELISA ACCIOLY GONÇALVES E VASCONCELLOS</b>, brasileira, casada, advogada, portadora da carteira de identidade nº 123.258, expedida pela OAB/RJ, com escritório profissional à Rua Real Grandeza, nº 139, sala 403, Botafogo, Rio de Janeiro/RJ, CEP: 22281-033.</p>
       <br><br>

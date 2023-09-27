@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -13,7 +19,7 @@
           <div class='textInputBox'>
             <div class='inputBox'>
               <label for='name'>Nome</label>
-              <input class='textInput' value='s' id="name" type='text'/>
+              <input class='textInput' value='' id="name" type='text'/>
             </div>
             <div class='inputBox'>
               <label for='nacionality'>Nacionalidade</label>
@@ -44,6 +50,10 @@
               <input class='textInput' value='' id="cep" type='text'/>
             </div>
             <div class='inputBox'>
+              <label for='adress'>Endereço</label>
+              <input class='textInput' value='' id="adress" type='text'/>
+            </div>
+            <!-- <div class='inputBox'>
               <label for='street'>Rua</label>
               <input class='textInput' value='' id="street" type='text'/>
             </div>
@@ -54,7 +64,7 @@
             <div class='inputBox'>
               <label for='apt'>apt</label>
               <input class='textInput' value='' id="apt" type='text'/>
-            </div>
+            </div> -->
             <div class='inputBox'>
               <label for='district'>Bairro</label>
               <input class='textInput' value='' id="district" type='text'/>
@@ -68,69 +78,10 @@
               <input class='textInput' value='' id="state" type='text'/>
             </div>
           </div>
-  
-          <div class='textInputBox'>
-            <div class='inputBox'>
-              <label for='name2'>Nome</label>
-              <input class='textInput' value='' id="name2" type='text'/>
-            </div>
-            <div class='inputBox'>
-              <label for='nacionality2'>Nacionalidade</label>
-              <input class='textInput' value='' id="nacionality2" type='text'/>
-            </div>
-            <div class='inputBox'>
-              <label for='civilState2'>Estado Civil</label>
-              <input class='textInput' value='' id="civilState2" type='text'/>
-            </div>
-            <div class='inputBox'>
-              <label for='occupation2'>Ocupação</label>
-              <input class='textInput' value='' id="occupation2" type='text'/>
-            </div>
-            <div class='inputBox'>
-              <label for='id2'>N. do Documento</label>
-              <input class='textInput' value='' id="id2" type='text'/>
-            </div>
-            <div class='inputBox'>
-              <label for='idIssuedBy2'>Documento Emitido Por</label>
-              <input class='textInput' value='' id="idIssuedBy2" type='text'/>
-            </div>
-            <div class='inputBox'>
-              <label for='cpf2'>CPF</label>
-              <input class='textInput' value='' id="cpf2" type='text'/>
-            </div>
-            <div class='inputBox'>
-              <label for='cep2'>CEP</label>
-              <input class='textInput' value='' id="cep2" type='text'/>
-            </div>
-            <div class='inputBox'>
-              <label for='street2'>Rua</label>
-              <input class='textInput' value='' id="street2" type='text'/>
-            </div>
-            <div class='inputBox'>
-              <label for='number2'>Número</label>
-              <input class='textInput' value='' id="number2" type='text'/>
-            </div>
-            <div class='inputBox'>
-              <label for='apt2'>apt</label>
-              <input class='textInput' value='' id="apt2" type='text'/>
-            </div>
-            <div class='inputBox'>
-              <label for='district2'>Bairro</label>
-              <input class='textInput' value='' id="district2" type='text'/>
-            </div>
-            <div class='inputBox'>
-              <label for='city2'>Cidade</label>
-              <input class='textInput' value='' id="city2" type='text'/>
-            </div>
-            <div class='inputBox'>
-              <label for='state2'>Estado</label>
-              <input class='textInput' value='' id="state2" type='text'/>
-            </div>
-          </div>
         </div>
   
         <div>
-          <button id="button" type='button'>Gerar Arquivo</button>
+          <button id="button" type='button'>Gerar Petição</button>
         </div>
   
       </div>

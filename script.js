@@ -40,7 +40,7 @@ button.addEventListener("click", (e) => {
   const currentMonth = numberToMonth(currentMonthNumber);
 
   const text = `
-    <div style="text-align: justify; font-family: Arial, Helvetica, sans-serif; font-size: 12">
+    <div style="text-align: justify; font-family: Arial, Helvetica, sans-serif; font-size: 12; line-height: 1.5">
       <div style="display: flex; justify-content: center"><b><p style="text-decoration: underline">PROCURAÇÃO</p></b></div>
       <br><br>
       <p><b>OUTORGANTES: ${name}</b>, ${nacionality}, ${civilState}, ${occupation}, portador da carteira de identidade nº ${id} expedida pelo(a) ${idIssuedBy}, portador(a) do CPF sob o nº ${cpf}, residente e domiciliado à ${adress}, ${district} - ${city}/${state}, CEP: ${cep}, nomeia e constitui a outorgada abaixo qualificada em sua bastante procuradora.</p>
